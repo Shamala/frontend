@@ -10,7 +10,7 @@ export const store = configureStore({
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware().concat(apiSlice.middleware),
-  devTools: true, // disable redux dev tool for production
+  devTools: false, // disable redux dev tool for production
 });
 
 setupListeners(store.dispatch);
